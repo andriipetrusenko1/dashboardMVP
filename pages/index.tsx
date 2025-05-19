@@ -115,7 +115,7 @@ export default function Dashboard() {
 type StatCardProps = {
   title: string;
   value: number | string;
-  trend: number;
+  trend: number | string;
   trendDirection: 'up' | 'down';
 };
 
