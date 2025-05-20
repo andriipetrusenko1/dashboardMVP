@@ -123,10 +123,16 @@ const StatCard = ({ title, value, trend, trendDirection }: StatCardProps) => (
   <div className="card stat-card">
     <h3 className="text-gray-500 text-sm font-medium">{title}</h3>
     <div className="mt-2">
-      {/* ... */}
+      <div className="stat-value">{value}</div>
+        <div className={`stat-label flex items-center ${trendDirection === 'up' ? 'trend-up' : 'trend-down'}`}>
+          {trend} {trendDirection === 'up' ? '↑' : '↓'}
+        </div>
     </div>
   </div>
 );
+
+
+  
   return (
     <div className="min-h-screen bg-gray-50">
       <Head>
