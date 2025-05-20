@@ -167,26 +167,26 @@ const StatCard = ({ title, value, trend, trendDirection }: StatCardProps) => (
           <StatCard 
             title="New Contacts" 
             value="114" 
-            trend={+12%} 
-            trendDirection={metrics.newContacts.trendDirection as 'up' | 'down'}
+            trend="+12%"
+            trendDirection='up'
           />
           <StatCard 
             title="New Deals" 
-            value={metrics.newDeals.value} 
-            trend={metrics.newDeals.trend} 
-           trendDirection={metrics.newContacts.trendDirection as 'up' | 'down'}
+            value="47"
+            trend="+8%"
+           trendDirection="up"
           />
           <StatCard 
             title="Open Deals" 
-            value={metrics.openDeals.value} 
-            trend={metrics.openDeals.trend} 
-            trendDirection={metrics.newContacts.trendDirection as 'up' | 'down'} 
+            value="138"
+            trend="+5%"
+            trendDirection="up"
           />
           <StatCard 
             title="Conversion Rate" 
-            value={metrics.conversionRate.value} 
-            trend={metrics.conversionRate.trend} 
-           trendDirection={metrics.newContacts.trendDirection as 'up' | 'down'}
+            value="32%"
+            trend="3%+"
+           trendDirection="up"
           />
         </div>
 
@@ -265,27 +265,27 @@ const StatCard = ({ title, value, trend, trendDirection }: StatCardProps) => (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <StatCard 
             title="Closed Won" 
-            value={metrics.closedWon.value} 
-            trend={metrics.closedWon.trend} 
-            trendDirection={metrics.newContacts.trendDirection as 'up' | 'down'}
+            value="28"
+            trend="+15%"
+            trendDirection="up"
           />
           <StatCard 
             title="Closed Lost" 
-            value={metrics.closedLost.value} 
-            trend={metrics.closedLost.trend} 
-            trendDirection={metrics.newContacts.trendDirection as 'up' | 'down'}
+            value="12" 
+            trend="-10%"
+            trendDirection="down"
           />
           <StatCard 
             title="Average Deal Size" 
-            value={metrics.avgDealSize.value} 
-            trend={metrics.avgDealSize.trend} 
-            trendDirection={metrics.newContacts.trendDirection as 'up' | 'down'}
+            value="$12,500"
+            trend="+5%"
+            trendDirection="up"
           />
           <StatCard 
             title="Average Sales Cycle" 
-            value={metrics.avgSalesCycle.value} 
-            trend={metrics.avgSalesCycle.trend} 
-            trendDirection={metrics.newContacts.trendDirection as 'up' | 'down'}
+            value="28 days"
+            trend="-2days"
+            trendDirection="up"
           />
         </div>
       </main>
